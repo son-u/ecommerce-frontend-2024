@@ -1,4 +1,3 @@
-
 import { HiTrendingDown, HiTrendingUp } from "react-icons/hi";
 import { useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
@@ -8,7 +7,7 @@ import { Skeleton } from "../../components/loader";
 import { useStatsQuery } from "../../redux/api/dashboardAPI";
 import { RootState } from "../../redux/store";
 // import { getLastMonths } from "../../utils/features";
- 
+
 // const { last6Months: months } = getLastMonths();
 
 const Dashboard = () => {
@@ -61,11 +60,7 @@ const Dashboard = () => {
                 value={stats.count.product}
                 color="rgb(76, 0, 255)"
                 heading="Products"
-                />
-                
-
-
-
+              />
             </section>
 
             <section className="graph-container">
@@ -81,9 +76,8 @@ const Dashboard = () => {
                   bgColor_2="rgba(53, 162, 235, 0.8)"
                 />
               </div> */}
-                
-              <Table data={stats.latestTransaction} />
 
+              <Table data={stats.latestTransaction} />
 
               <div className="dashboard-categories">
                 <h2>Inventory</h2>
@@ -104,8 +98,7 @@ const Dashboard = () => {
               </div>
             </section>
 
-              
-              {/* Gender chart */}
+            {/* Gender chart */}
             {/* <section className="transaction-container">
               <div className="gender-chart">
                 <h2>Gender Ratio</h2>
