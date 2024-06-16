@@ -1,0 +1,62 @@
+.login {
+  height: 90vh;
+  @include flex(column);
+
+  > main {
+    width: 100%;
+    height: 80%;
+    max-width: 35rem;
+    padding: 2rem;
+    @include baseShadow;
+    @include flex(column, center, stretch);
+    h1{
+      margin: 1.5rem 0 2rem 0;
+        text-align: center;
+        color: #7c69ec;
+        font-family: "Poppins", sans-serif;
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    span{
+      text-align: center;
+    }
+    > div {
+      width: 100%;
+      @include flex(column, flex-start, stretch, 0.2rem);
+      > input,
+      > select {
+        @include inputStyle;
+        border: 1px solid rgba(162, 162, 162, 0.53);
+        border-radius: 5px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      > p {
+        text-align: center;
+        margin: 2rem;
+      }
+
+      button {
+        width: 70%;
+        margin: auto;
+        height: 3rem;
+        @include btn(unset, rgb(0, 0, 0), white);
+        @include flex;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        font-size: 1.05rem;
+        > svg {
+          background-color: white;
+          width: 30%;
+          height: 100%;
+        }
+
+        > span {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

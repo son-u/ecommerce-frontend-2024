@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(204, 204, 255, 1) 0%,
+    rgba(252, 255, 253, 1) 99%
+  );
+
+  display: flex;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 180px;
+  line-height: 0.9;
+  align-items: flex-start;
+}
+
+.hero-left h2 {
+  color: #090909;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.hero-left p {
+  color: #171717;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 310px;
+  height: 70px;
+  border-radius: 75px;
+  margin-top: 30px;
+  background: #7c69ec;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero-latest-btn a {
+  color: white;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-right img {
+  height: 600px;
+}
+
+/* Styles for Latest Section ============================================== >>>  */
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 84%;
+  padding: 0 1rem;
+  /* margin: 0 auto; */
+}
+
+.latest {
+  height: 90vh;
+}
+
+.section-head {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-head h1 {
+  color: grey;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-head img {
+  margin: 1rem auto;
+}
+.line-art {
+  max-width: 240px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line-art img {
+  width: 30px;
+}
+.line-art div {
+  width: 100px;
+  height: 2px;
+  background-color: grey;
+}
+
+/* Styles for product card starts here  =================================>>  */
+
+/* .posts_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+} */
+
+.product-card {
+  width: 380px;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px 0;
+  /* background: #fafafa; */
+  background: #fafafa3e;
+  transition: all 0.3s;
+}
+
+.product-card:hover {
+  /* background: #fafafa3e; */
+  background: #fafafa;
+}
+
+/* Styles for Offers Section starts here  =================================>>  */
+
+.offers {
+  width: 75%;
+  height: 55vh;
+  display: flex;
+  margin: auto;
+  padding: 0px 140px;
+  margin-bottom: 150px;
+  background: linear-gradient(
+    180deg,
+    rgba(204, 204, 255, 1) 0%,
+    rgba(252, 255, 253, 1) 99%
+  );
+}
+
+.offers-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.offers-left h1 {
+  color: #171717;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.offers-left p {
+  color: #171717;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.offers-left button {
+  width: 282px;
+  height: 70px;
+  border-radius: 35px;
+  background: #7c69ec;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.offers-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+
+.offers-right img {
+  width: 400px;
+}
+
+/* Styles for categories Section =============================== >>> */
+
+.categories {
+  height: 80vh;
+}
+
+.categories h1 {
+  font-size: 50px;
+  justify-content: flex-start;
+}
+
+.cat-img {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 2rem;
+}
+
+.cat-img img {
+  backdrop-filter: blur(10px);
+  transition: all 300ms ease;
+}
+
+.cat-img img:hover {
+  transform: translateY(-0.5rem);
+  /* box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1); */
+}
+
+/* Styles for Contact Section =================================  >>> */
+
+.contact {
+  height: 100vh;
+}
+
+.container-main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  background: white;
+  color: #1f2641;
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  font-weight: 500;
+  transition: all 400ms ease;
+}
+
+.contact-btn:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: #7d69ec91;
+}
+
+.contact_btn-primary {
+  background: #151717;
+  color: white;
+}
+
+/* Styles for contact section starts here ========================  >>>> */
+
+.contact_container {
+  /* background: #151717; */
+
+  /* background: #f4f3f3; */
+  /* background: linear-gradient(
+    160deg,
+    rgba(204, 204, 255, 1) 0%,
+    rgba(252, 255, 253, 1) 99%
+  ); */
+
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 55px 55px;
+
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  height: 30rem;
+  margin: 7rem auto;
+  border-radius: 1rem;
+}
+
+.contact_aside {
+  /* background: #665fed; */
+  background: linear-gradient(
+    360deg,
+    rgba(204, 204, 255, 1) 0%,
+    rgba(252, 255, 253, 1) 99%
+  );
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 10rem;
+  border: 2px dotted #7d69ec91;
+  height: 110%;
+
+}
+
+.aside_image {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.aside_image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.contact_aside h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.contact_aside p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.contact_details li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact_details li h5{
+  font-weight: 600;
+}
+
+.contact_socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 3rem;
+}
+
+.contact_socials a {
+  background: #424890;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  color: white;
+  transition: all 400ms ease;
+}
+.contact_socials a:hover {
+  background: transparent;
+  color: #090909;
+}
+
+/* Form Style starts here ==============    > */
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+}
+
+.form_name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contact_form input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid #6c6c6c63;
+  border-radius: 3px;
+}
+
+.contact_form input:focus-within,
+textarea:focus-within {
+  border: 1.5px solid #7d69ec91;
+}
+
+.contact_form .contact-btn {
+  width: max-content;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+
+
+/* Styles for Footer Starts Here ================================  >>>  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10rem;
+  background: linear-gradient(
+    0deg,
+    rgba(204, 204, 255, 1) 0%,
+    rgba(252, 255, 253, 1) 99%
+  );
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo p {
+  color: #7c69ec;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  color: #252525;
+  font-size: 20px;
+}
+
+.footer-links li {
+  cursor: pointer;
+}
+
+.footer-socials-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons-container {
+  padding: 10px;
+  padding-bottom: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.footer-icons-container svg{
+  width: 32px;
+  height: 32px;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+
+.footer-copyright hr {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  height: 1px;
+  background: #000000;
+}
